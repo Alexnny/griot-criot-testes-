@@ -1,0 +1,19 @@
+{
+  "name": "griot-live-web",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Griot: assistente de voz pessoal em tempo real com WebGL reativo, transcri\u00e7\u00e3o e mem\u00f3ria local.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node start.js",
+    "dev": "node --watch server.js",
+    "test": "node --test tests/*.test.js",
+    "test:integration": "node --test integration/criot.test.js"
+  },
+  "dependencies": {
+    "pg": "^8.16.3"
+  }
+}

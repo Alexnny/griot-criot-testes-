@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f7ff"><title>Testar API Criot · Griot</title>
+  <link rel="stylesheet" href="/laboratorio.css"><link rel="icon" href="/favicon.svg">
+</head>
+<body><main>
+  <a href="/" class="back">← Voltar à Griot</a>
+  <span class="badge">ETAPA 1 · CHAT E HISTÓRICO</span>
+  <h1>Seu laboratório Criot</h1>
+  <p>Teste sua própria API pelo telefone: crie uma conversa, envie uma mensagem e veja o histórico salvo.</p>
+  <p class="notice">O modo simulado não usa Gemini e não gera respostas inteligentes. Este teste não inclui voz ao vivo. No Render gratuito, o histórico pode desaparecer ao reiniciar ou suspender o serviço.</p>
+  <p id="status" role="status" aria-live="polite">Conectando…</p>
+  <section class="controls" aria-label="Controles de teste">
+    <button id="test" disabled>Executar teste completo</button>
+    <button id="new" class="secondary" disabled>Nova conversa</button>
+    <button id="refresh" class="secondary" disabled>Recarregar histórico</button>
+    <label for="conversations">Minhas conversas de teste</label>
+    <select id="conversations" disabled><option value="">Crie uma conversa</option></select>
+  </section>
+  <ol id="results" aria-live="polite"></ol>
+  <section id="messages" aria-label="Histórico da conversa" aria-live="polite"></section>
+  <form id="form"><label for="prompt">Sua mensagem</label>
+    <textarea id="prompt" maxlength="16000" required placeholder="Olá, Criot! Meu nome é Igor." disabled></textarea>
+    <button id="send" disabled>Enviar para Criot</button>
+  </form>
+  <button id="export" class="secondary" disabled>Baixar histórico em JSON</button>
+</main><script src="/laboratorio.js" defer></script></body></html>

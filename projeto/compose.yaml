@@ -1,0 +1,15 @@
+services:
+  griot:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      CRIOT_ENABLED: "true"
+      AI_PROVIDER: mock
+      GEMINI_API_KEY: ${GEMINI_API_KEY:-}
+      SESSION_SECRET: ${SESSION_SECRET:-}
+      PORT: 3000
+    volumes:
+      - griot-data:/app/.data
+volumes:
+  griot-data: {}

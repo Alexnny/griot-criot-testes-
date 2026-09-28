@@ -1,0 +1,6 @@
+VERSÃO DE TESTES GRIOT + CRIOT
+
+Abra COMECE-AQUI-CELULAR.md e siga o deploy Docker em um serviço separado.
+
+O laboratório /laboratorio.html funciona sem Gemini. O chat e a voz originais continuam dependendo do Gemini.
+Render gratuito não preserva o SQLite após reinícios/suspensões.
